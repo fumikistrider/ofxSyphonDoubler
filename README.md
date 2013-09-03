@@ -4,7 +4,7 @@ ofxSyphonDoubler
 About
 -----
 
-Make 2 syphon input into 1 syphon output.
+Make 2 syphon inputs into 1 syphon output.
 
 
 Requirements
