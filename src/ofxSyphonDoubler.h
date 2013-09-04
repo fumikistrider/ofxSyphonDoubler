@@ -25,6 +25,10 @@ public:
     void serverAnnounced(ofxSyphonServerDirectoryEventArgs &arg);
     void serverRetired(ofxSyphonServerDirectoryEventArgs &arg);
 
+    int width, height;
+    void setSize(int w, int h);
+    bool bResize;
+    
     ofxUICanvas *guiSize;
     ofxUICanvas *guiLeft;
     ofxUICanvas *guiRight;

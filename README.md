@@ -4,8 +4,8 @@ ofxSyphonDoubler
 About
 -----
 
-Make 2 syphon input into 1 syphon output.
-
+This addon make 2 syphon input into 1 syphon output.
+It uses ofxSyphonDirectory (ofxSyphon).
 
 Requirements
 ------------
@@ -13,11 +13,12 @@ Requirements
 openFrameworks 0.8.0 
 
 
-addon Dependency
+Dependency
 ------------
 
 This addon needs:
 
-- ofxSyphon
-- ofxUI
+- [ofxSyphon](https://github.com/astellato/ofxSyphon)
+- [ofxUI](https://github.com/rezaali/ofxUI)
 - ofxXmlSettings
+
