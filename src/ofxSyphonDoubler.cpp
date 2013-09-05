@@ -127,8 +127,27 @@ void ofxSyphonDoubler::serverRetired(ofxSyphonServerDirectoryEventArgs &arg)
 }
 
 //--------------------------------------------------------------
+void ofxSyphonDoubler::setClientLeft(string name){
+    for(int i = 0; i < names.size(); i++){
+        if( names[i] == name){
+            client_1.set( dir.getDescription(i) );
+        }
+    }
+}
+
+//--------------------------------------------------------------
+void ofxSyphonDoubler::setClientRight(string name){
+    for(int i = 0; i < names.size(); i++){
+        if( names[i] == name){
+            client_2.set( dir.getDescription(i) );
+        }
+    }
+}
+
+//--------------------------------------------------------------
 void ofxSyphonDoubler::guiEvent(ofxUIEventArgs &e)
 {
+    
     string name = e.widget->getName();
     
     // select input
@@ -166,3 +185,9 @@ void ofxSyphonDoubler::guiEvent(ofxUIEventArgs &e)
     
 }
 
+//--------------------------------------------------------------
+vector<string> ofxSyphonDoubler::getInputAppNames(){
+
+    return names;
+
+}

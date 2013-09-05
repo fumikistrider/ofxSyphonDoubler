@@ -24,6 +24,8 @@ public:
     ofxSyphonServer server;
     void serverAnnounced(ofxSyphonServerDirectoryEventArgs &arg);
     void serverRetired(ofxSyphonServerDirectoryEventArgs &arg);
+    void setClientLeft(string name);
+    void setClientRight(string name);
 
     int width, height;
     void setSize(int w, int h);
@@ -34,10 +36,11 @@ public:
     ofxUICanvas *guiRight;
     ofxUIDropDownList *ddlLeft;
     ofxUIDropDownList *ddlRight;
-    vector<string> names;
     void guiEvent(ofxUIEventArgs &e);
+    vector<string> getInputAppNames();
     
+protected:
+    vector<string> names;
     ofFbo fbo;
-    
     
 };
